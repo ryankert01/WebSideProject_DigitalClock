@@ -1,0 +1,85 @@
+body {
+    font-family: system-ui;
+    background: #470881;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clock {
+    font-family: Impact, fantasy;
+}
+
+
+section {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.clock {
+    height: 500px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    background-position: center;
+
+}
+
+.min {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24%;
+    height: 4px;
+    background-color: white;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+
+.sec {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 2px;
+    background-color: white;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+
+.hour {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15%;
+    height: 5px;
+    background-color: white;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+
+.root {
+    position:absolute;
+    top:15%;
+    left:15%;
+    width: 350px;
+    height: 350px;
+    border: 3px white solid;
+    border-radius: 50%;
+    z-index: 1;
+}
+.dot {
+    position: absolute;
+    top:49.2%;
+    right:49.2%;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+  }
